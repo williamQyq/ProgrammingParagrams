@@ -1,0 +1,35 @@
+{
+  "name": "programmingparagramshw1",
+  "version": "1.0.0",
+  "description": "Hw1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm run compile",
+    "pretest": "npm run compile",
+    "posttest": "npm run lint"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Yuqing Qiao",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "20.8.2",
+    "@types/uuid": "^9.0.7",
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.18.1",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.33.2",
+    "gts": "^5.2.0",
+    "prettier": "^3.1.1",
+    "typescript": "~5.2.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+  }
+}
