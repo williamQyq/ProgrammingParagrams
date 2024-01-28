@@ -1,0 +1,37 @@
+# Assignment 1
+
+This assignment implements three classes: Interaction, DalleInteraction, and PromptManager. The Interaction class stores prompts and responses and is capable of displaying them. The DalleInteraction class inherits from Interaction and adds the ability to store image URLs. The PromptManager class can record both regular prompts and Dalle prompts, and it is capable of removing prompts.
+
+## Getting Started
+
+To install: `npm install`  
+To run: `npm run start`
+
+This run the index.js which test DalleInteraction and PromptManager classes.
+
+## Feature
+
+This project use typescript for readability. And a custom script added in pacakge.json to run the program.
+
+
+## File structure
+```
+./build/
+├── index.js
+└── src
+    └── services
+        ├── DalleInteraction.js
+        ├── Interaction.js
+        └── PromptManager.js
+
+./src/
+├── index.ts
+└── src
+    └── services
+        ├── DalleInteraction.ts
+        ├── Interaction.ts
+        └── PromptManager.ts
+```
+
+## Screenshot
+![screenshot](./screenshot.png)
