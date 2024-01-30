@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 class Interaction {
     constructor(prompt, response) {
         this.prompt = prompt;
@@ -16,4 +18,5 @@ class Interaction {
         return Interaction.name;
     }
 }
-export default Interaction;
+exports.default = Interaction;
+//# sourceMappingURL=Interaction.js.map

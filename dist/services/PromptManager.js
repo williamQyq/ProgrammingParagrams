@@ -1,5 +1,10 @@
-import DalleInteraction from "./DalleInteraction.js";
-import Interaction from "./Interaction.js";
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+const DalleInteraction_1 = __importDefault(require("./DalleInteraction"));
+const Interaction_1 = __importDefault(require("./Interaction"));
 class PromptManager {
     constructor() {
         this.interactions = [];
@@ -14,11 +19,11 @@ class PromptManager {
         }
     }
     recordPrompt(prompt, response) {
-        const p = new Interaction(prompt, response);
+        const p = new Interaction_1.default(prompt, response);
         this.interactions.push(p);
     }
     recordDallePrompt(prompt, response, image) {
-        const dallePrompt = new DalleInteraction(prompt, response, image);
+        const dallePrompt = new DalleInteraction_1.default(prompt, response, image);
         this.interactions.push(dallePrompt);
     }
     removePrompt(index) {
@@ -30,4 +35,5 @@ class PromptManager {
         console.log(`Successfully removed interaction at index ${index}.`);
     }
 }
-export default PromptManager;
+exports.default = PromptManager;
+//# sourceMappingURL=PromptManager.js.map
