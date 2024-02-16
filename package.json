@@ -1,34 +1,32 @@
 {
-  "name": "programmingparagramshw1",
+  "name": "promptmanager",
   "version": "1.0.0",
-  "description": "Hw1",
-  "main": "./src/index.ts",
+  "description": "This assignment implements three classes: Interaction, DalleInteraction, and PromptManager. The Interaction class stores prompts and responses and is capable of displaying them. The DalleInteraction class inherits from Interaction and adds the ability to store image URLs. The PromptManager class can record both regular prompts and Dalle prompts, and it is capable of removing prompts.",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "gts lint",
-    "clean": "gts clean",
-    "compile": "tsc",
-    "fix": "gts fix",
-    "prepare": "npm run compile",
-    "pretest": "npm run compile",
-    "posttest": "npm run lint",
-    "start": "node ./dist/index.js"
+    "lint": "eslint --ext .js --ignore-path .gitignore .",
+    "start": "node src/index.js"
+
   },
-  "type": "commonjs",
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamQyq/ProgrammingParagrams.git"
+  },
   "author": "Yuqing Qiao",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamQyq/ProgrammingParagrams/issues"
+  },
+  "homepage": "https://github.com/williamQyq/ProgrammingParagrams#readme",
   "devDependencies": {
-    "@types/node": "20.8.2",
-    "@typescript-eslint/eslint-plugin": "^6.20.0",
-    "@typescript-eslint/parser": "^6.19.1",
     "eslint": "^8.56.0",
-    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.2",
-    "eslint-plugin-promise": "^6.1.1",
-    "gts": "^5.2.0",
-    "ts-node": "^10.9.2",
-    "typescript": "~5.2.0"
-  }
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^3.2.5"
+  },
+  "type": "module"
 }

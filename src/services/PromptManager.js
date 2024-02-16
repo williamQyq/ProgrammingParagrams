@@ -1,28 +1,28 @@
-import DalleInteraction from "./DalleInteraction";
-import Interaction from "./Interaction";
+import DalleInteraction from "./DalleInteraction.js";
+import Interaction from "./Interaction.js";
 
 class PromptManager{
-    interactions:Interaction[] = [];
+    interactions = [];
     showAllInteraction(){
         if(this.interactions.length === 0){
-            console.log("No interactions.")
+            console.log('No interactions.')
             return;
         }
         for(const [index, interaction] of this.interactions.entries()){
             interaction.showContent(index);
         }
     }
-    recordPrompt(prompt:string, response:string){
+    recordPrompt(prompt, response){
         const p = new Interaction(prompt,response);
         this.interactions.push(p);
     }
 
-    recordDallePrompt(prompt:string, response:string, image:URL){
+    recordDallePrompt(prompt, response, image){
         const dallePrompt = new DalleInteraction(prompt,response,image);
         this.interactions.push(dallePrompt);
     }
 
-    removePrompt(index:number){
+    removePrompt(index){
         if(index>this.interactions.length-1) {
             console.error(`Unable to remove prompt at index ${index}`);
             return;

@@ -2,35 +2,26 @@
 
 This assignment implements three classes: Interaction, DalleInteraction, and PromptManager. The Interaction class stores prompts and responses and is capable of displaying them. The DalleInteraction class inherits from Interaction and adds the ability to store image URLs. The PromptManager class can record both regular prompts and Dalle prompts, and it is capable of removing prompts.
 
-`This assignment does utilizing ESM syntax for import/export, but the TypeScript configuration in package.json and tsconfig.json must remain as 'CommonJS' and cannot be changed.`
-
 ## Getting Started
-To install typescript and ts-node:  
-`npm install -g typescript ts-node`
 
 To install: `npm install`  
 To run: `npm run start`
 
-This run the index.ts which test DalleInteraction and PromptManager functionalities.
+This run the src/index.js which test DalleInteraction and PromptManager functionalities.
 
 ## Feature
 
-This project uses TypeScript for improved readability and error checking, with a custom script added in package.json to run the program. 
+This project introduces a Console Interaction Interface, a powerful feature designed to facilitate direct communication between the user and the application through the command line interface (CLI). This interface enables users to input commands, respond to prompts, and receive immediate feedback and outputs directly in the console.
 
-TypeScript will compile the source code into JavaScript files in the dist/ directory.
-
-## TS File structure
+## JS File structure
 ```
 
 ./src/
 
 └── src
     └── services
-        ├── DalleInteraction.ts
-        ├── Interaction.ts
-        └── PromptManager.ts
-    └── index.ts
+        ├── DalleInteraction.js
+        ├── Interaction.js
+        └── PromptManager.js
+    └── index.js
 ```
-
-## Screenshot
-![screenshot](./screenshot.png)

@@ -1,9 +1,8 @@
-import { URL} from "url";
-import Interaction from "./Interaction";
+import Interaction from "./Interaction.js";
 
 class DalleInteraction extends Interaction{
-    image: URL;
-    constructor(prompt:string, response:string, image:URL){
+    image;
+    constructor(prompt, response, image){
         super(prompt,response);
         this.image = image;
 
@@ -13,7 +12,7 @@ class DalleInteraction extends Interaction{
         return DalleInteraction.name;
     }
 
-    isDalle(interaction:Interaction){
+    isDalle(interaction){
         return interaction.getType() === DalleInteraction.name;
     }
 
