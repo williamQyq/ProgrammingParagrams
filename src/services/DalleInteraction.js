@@ -5,7 +5,7 @@ class DalleInteraction extends Interaction{
     constructor(prompt, response, image){
         super(prompt,response);
         this.image = image;
-
+        
     }
 
     getType(){

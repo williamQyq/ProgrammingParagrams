@@ -41,7 +41,7 @@ function handleChoice(choice) {
       rl.question("Enter your Dalle prompt text: ", (promptText) => {
         rl.question("Enter metadata: ", (metadata) => {
           rl.question("Enter image URL: ", (imageUrl) => {
-            manager.recordDallePrompt(promptText, metadata, new URL(imageUrl));
+            manager.recordDallePrompt(promptText, metadata, imageUrl);
             askForChoice(); // Ask for the next choice after handling the current one
           });
         });
